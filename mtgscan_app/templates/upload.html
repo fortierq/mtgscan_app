@@ -1,7 +1,8 @@
 {% extends "bootstrap/base.html" %}
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+{% block styles %}
 <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+{% endblock %}
 
 {% block title %}mtgscan app{% endblock %}
 
@@ -27,4 +28,7 @@
 {% endif %}
 
 {% endblock %}
-    
+
+{% block scripts %}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+{% endblock %}
